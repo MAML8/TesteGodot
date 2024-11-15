@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dmit587nfse51"]
+
+[ext_resource type="Script" path="res://move.gd" id="1_84ck8"]
+[ext_resource type="Shape2D" uid="uid://bbsrh5bei5jod" path="res://circle.tres" id="2_w5nw4"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_vab74"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(295, 165)
+script = ExtResource("1_84ck8")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+position = Vector2(0, 1)
+texture = SubResource("ImageTexture_vab74")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = ExtResource("2_w5nw4")
+
+[node name="Label" type="Label" parent="."]
+offset_top = -1.0
+offset_right = 91.0
+offset_bottom = 22.0
+text = "Hello World"
