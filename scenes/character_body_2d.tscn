@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://dmit587nfse51"]
+
+[ext_resource type="Script" path="res://scripts/move.gd" id="1_ydfpj"]
+[ext_resource type="Shape2D" uid="uid://bbsrh5bei5jod" path="res://circle.tres" id="2_1axu0"]
+[ext_resource type="Texture2D" uid="uid://b6ln7q4uf7uno" path="res://icon.svg" id="3_tugke"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(295, 165)
+script = ExtResource("1_ydfpj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = ExtResource("2_1axu0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("3_tugke")
