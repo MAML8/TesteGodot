@@ -27,4 +27,3 @@ func _process(delta: float) -> void:
 				hit.interact();
 	else:
 		interagiu = false;
-	
